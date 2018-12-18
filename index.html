@@ -34,7 +34,9 @@
     
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav-bar">
+    
 
+    
     <div class="container">
         <header id="header-img">
             <img class="img" src="img/portfolio/logo/hebrew-star.png" height="30" width="30" alt="">
@@ -46,9 +48,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Services</a>
           </li>
@@ -68,9 +68,9 @@
       </div>
     </div>
   </nav>
-<!--End of Navigation Menu-->
+<!--Fin Navigation -->
 
-<!--First Header-->
+<!-- header -->
   <header id="header" class="masthead text-center text-white d-flex">
     <div class="container my-auto">
       <div class="row">
@@ -80,34 +80,17 @@
           </h1>
           <hr>
         </div>
+        
         <div class="col-lg-8 mx-auto">
           <p class="text mb-5"></p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Find Out More</a>
         </div>
       </div>
     </div>
   </header>
-  <!--End of First Header-->
-
-
-<!--About Header-->
-  <section class="bg-primary" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading text-white">We've got what you need!</h2>
-          <hr class="light my-4">
-          <p class="text-faded mb-4">Israel, a Middle Eastern country on the Mediterranean Sea,
-            is regarded by Jews, Christians and Muslims as the biblical Holy Land!</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--End of About Header-->
-
-
-<!--Service Header-->
+<!-- fin header -->
+  
+<!-- Services -->
   <section id="services">
     <div class="container">
       <div class="row">
@@ -155,7 +138,7 @@
       </div>
     </div>
   </section>
-<!--End of Service Header-->
+<!-- fin Services -->
   
   
 
@@ -164,7 +147,7 @@
   <br>
   <br>  
 
-<!--Experience Header-->
+<!-- Experiences -->
   <section class="p-0" id="experiences">
     <div class="container-fluid p-0">
       <div class="row no-gutters popup-gallery">
@@ -306,35 +289,31 @@
         </div>
       </div>
     </div>
-
-    <!--Flexbox for space-->
-    <div class="d-inline-flex p-2">
-    </div>
-    <!--End of Flexbox-->
+    <div class="d-inline-flex p-2"></div>
   </section>
-<!--End of Experience Header-->
+<!-- fin Experiences -->
 
 <!--Vimeo Video-->
+<section class="p-4" id="video">
+    <div class="container">
 
-  <section class="p-4" id="video">
-      <div class="video-container">
+  <div class="video-container">
+    
+      <div class="video-responsive">
         
-      
-        
-              
-          <div class="video-responsive">
-          <iframe  src="https://player.vimeo.com/video/29740813?color=6c934e&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-        </div>
-      </div>
+      <iframe  src="https://player.vimeo.com/video/29740813?color=6c934e&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+    </div>
+    </div>
+  
 </section>
-<!--End of Vimeo Video-->
+<!--fin Vimeo Video-->
 
 
-
-<!--Pricing Header-->
+<!-- Price -->
   <div class="container">
     <section class="p-0" id="price">
       <div class="container-fluid p-4">
+
 
         <!--Grid row-->
         <div class="row text-center wow fadeIn">
@@ -494,17 +473,15 @@
 
       </div>
   </div>
-  </main>
-
   </section>
-<!--End of Pricing Header-->
-  
+<!-- fin Price -->
 
+<!-- flexbox -->
+<div class="d-inline-flex p-2"></div>
+<!-- fin flexbox -->
 
-<!--Email Header-->
-  <div class="d-inline-flex p-2"></div>
-
-  <section id="contact">
+<!-- fin Email-->
+<section id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
@@ -514,7 +491,7 @@
             and we will get back to you as soon as possible!</p>
         </div>
       </div>
-
+  
       <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
         <form id="form"> 
           <div class="form-row">
@@ -530,39 +507,8 @@
       </div>
     </div>
   </section>
-<!--End of Email Header-->
-<!--
-  <script>$(function() {
-    
-    var $allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='//www.youtube.com'], object, embed"),
-    $fluidEl = $("figure");
-	    	
-	$allVideos.each(function() {
-	
-	  $(this)
-	    // jQuery .data does not work on object/embed elements
-	    .attr('data-aspectRatio', this.height / this.width)
-	    .removeAttr('height')
-	    .removeAttr('width');
-	
-	});
-	
-	$(window).resize(function() {
-	   
-	  $allVideos.each(function() {
-	  
-	    var $el = $(this);
-        var newWidth = $el.parents('figure').width();
-	    $el
-	        .width(newWidth)
-	        .height(newWidth * $el.attr('data-aspectRatio'));
-	  
-	  });
-	
-	}).resize();
-});</script>
+  <!-- fin Email-->
 
--->
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -571,11 +517,9 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
- 
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
-  
 
 </body>
 
