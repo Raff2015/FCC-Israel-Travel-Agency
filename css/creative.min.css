@@ -89,13 +89,26 @@ img::-moz-selection {
     background: 0 0;
 }
 
-/* Vimeo XY */
-.video {
-    display: block;
-    margin: 0 auto;
-
-}
-/* Fin Vimeo XY */
+/*Video Responsive Settings*/
+.video-container{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+  }
+  .video-responsive{
+      overflow:hidden;
+      padding-bottom:56.25%;
+      position:relative;
+      height:0;
+  }
+  .video-responsive iframe{
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;
+      position:absolute;
+  }
+  /*End of Video Responsive Settings*/
 
 #nav-bar {
     border-bottom: 1px solid rgba(33, 37, 41, .1);

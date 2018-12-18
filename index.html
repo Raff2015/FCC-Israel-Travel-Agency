@@ -48,9 +48,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Services</a>
           </li>
@@ -58,7 +56,7 @@
             <a class="nav-link js-scroll-trigger" href="#experiences">Experiences</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#videos">Video</a>
+              <a class="nav-link js-scroll-trigger" href="#video">Video</a>
             </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#price">Book Your Trip Now</a>
@@ -70,7 +68,9 @@
       </div>
     </div>
   </nav>
+<!--Fin Navigation -->
 
+<!-- header -->
   <header id="header" class="masthead text-center text-white d-flex">
     <div class="container my-auto">
       <div class="row">
@@ -80,28 +80,17 @@
           </h1>
           <hr>
         </div>
+        
         <div class="col-lg-8 mx-auto">
           <p class="text mb-5"></p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Find Out More</a>
         </div>
       </div>
     </div>
   </header>
-
-  <section class="bg-primary" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading text-white">We've got what you need!</h2>
-          <hr class="light my-4">
-          <p class="text-faded mb-4">Israel, a Middle Eastern country on the Mediterranean Sea,
-            is regarded by Jews, Christians and Muslims as the biblical Holy Land!</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
+<!-- fin header -->
+  
+<!-- Services -->
   <section id="services">
     <div class="container">
       <div class="row">
@@ -149,7 +138,7 @@
       </div>
     </div>
   </section>
-
+<!-- fin Services -->
   
   
 
@@ -158,7 +147,7 @@
   <br>
   <br>  
 
-
+<!-- Experiences -->
   <section class="p-0" id="experiences">
     <div class="container-fluid p-0">
       <div class="row no-gutters popup-gallery">
@@ -302,31 +291,25 @@
     </div>
     <div class="d-inline-flex p-2"></div>
   </section>
+<!-- fin Experiences -->
 
-  <section class="p-4" id="videos">
-      <div class="container">
-        
-          </div>
-       
+<!--Vimeo Video-->
+<section class="p-4" id="video">
+    <div class="container">
 
-            
-          <center>
-              <div style="text-align: center" class="embed-container" id="video">
-          <iframe src="https://player.vimeo.com/video/29740813?color=6c934e&title=0&byline=0&portrait=0" width="915" height="475" 
-          frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-    </div>
-  </center>
+  <div class="video-container">
     
-</div>
-</div>
-</div>
-
-
+      <div class="video-responsive">
+        
+      <iframe  src="https://player.vimeo.com/video/29740813?color=6c934e&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+    </div>
+    </div>
+  
 </section>
+<!--fin Vimeo Video-->
 
 
-
+<!-- Price -->
   <div class="container">
     <section class="p-0" id="price">
       <div class="container-fluid p-4">
@@ -490,17 +473,15 @@
 
       </div>
   </div>
-  </main>
-
   </section>
+<!-- fin Price -->
 
-  
+<!-- flexbox -->
+<div class="d-inline-flex p-2"></div>
+<!-- fin flexbox -->
 
-
-
-  <div class="d-inline-flex p-2"></div>
-
-  <section id="contact">
+<!-- fin Email-->
+<section id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
@@ -510,61 +491,23 @@
             and we will get back to you as soon as possible!</p>
         </div>
       </div>
-
+  
       <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-        <form id="form">
+        <form id="form"> 
           <div class="form-row">
             <div class="col-12 col-md-9 mb-2 mb-md-0">
-              <input type="email" class="form-control form-control-lg" id="email" placeholder="Enter your email...">
+              <input type="email" name="email" class="form-control form-control-lg" id="email" placeholder="Enter your email..."required>
+                  
             </div>
             <div class="col-12 col-md-3">
-              <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+              <button type="submit" id="submit" class="btn btn-block btn-lg btn-primary" formaction="https://www.freecodecamp.org/email-submit">Sign up!</button>
             </div>
           </div>
         </form>
       </div>
-    
-        <label id="email-label">Email <span class="text-muted"></span></label>
-        <input type="email" name="email" class="form-control" placeholder="you@email.com" required>
-        <div class="invalid-feedback">
-          Please enter a valid email address.
-        </div>
-      </div>
-
     </div>
   </section>
-
-
-  <script>$(function() {
-    
-    var $allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='//www.youtube.com'], object, embed"),
-    $fluidEl = $("figure");
-	    	
-	$allVideos.each(function() {
-	
-	  $(this)
-	    // jQuery .data does not work on object/embed elements
-	    .attr('data-aspectRatio', this.height / this.width)
-	    .removeAttr('height')
-	    .removeAttr('width');
-	
-	});
-	
-	$(window).resize(function() {
-	   
-	  $allVideos.each(function() {
-	  
-	    var $el = $(this);
-        var newWidth = $el.parents('figure').width();
-	    $el
-	        .width(newWidth)
-	        .height(newWidth * $el.attr('data-aspectRatio'));
-	  
-	  });
-	
-	}).resize();
-});</script>
-
+  <!-- fin Email-->
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
